@@ -24,6 +24,18 @@ INCREMENT = 255/333.33
 # draw_line(250, 250, 500, 250, screen, [ 255, 0, 0 ])
 # draw_line(250, 250, 250, 0, screen, [ 255, 0, 0 ])
 
+# draw_line(250, 250, 500, 249, screen, [ 255, 0, 0 ])
+
+# draw_line(250, 250, 249, 0, screen, [ 255, 0, 0 ])
+
+# draw_line(250, 250, 499, 0, screen, [ 255, 0, 0 ])
+# draw_line(250, 250, 500, 0, screen, [ 255, 0, 0 ])
+# draw_line(250, 250, 500, 1, screen, [ 255, 0, 0 ])
+# draw_line(250, 250, 498, 0, screen, [ 255, 0, 0 ])
+
+# draw_line(250, 250, 500, 500, screen, [ 255, 255, 0 ])
+
+
 def color_change(color):
     global cycle
     global val
@@ -61,29 +73,55 @@ def color_change(color):
         val -= INCREMENT
         color[1] = math.ceil(val)
 
+# ex = 0
+# ey = 500
+#
+# while ex <= 500:
+#     draw_line(500, 0, ex, ey, screen, color)
+#     ex += 1
+#     color_change(color)
+#
+# ex = 500
+# while ey >= 0:
+#     draw_line(500, 0, ex, ey, screen, color)
+#     ey += -1
+#     color_change(color)
+#
+# ey = 0
+# while ex >= 0:
+#     draw_line(500, 0, ex, ey, screen, color)
+#     ex += -1
+#     color_change(color)
+#
+# ex = 0
+# while ey <= 500:
+#     draw_line(500, 0, ex, ey, screen, color)
+#     ey += 1
+#     color_change(color)
+
 ex = 0
 ey = 500
 
 while ex <= 500:
-    draw_line(500, 0, ex, ey, screen, color)
+    draw_line(100, 100, ex, ey, screen, color)
     ex += 1
     color_change(color)
 
 ex = 500
 while ey >= 0:
-    draw_line(500, 0, ex, ey, screen, color)
+    draw_line(100, 100, ex, ey, screen, color)
     ey += -1
     color_change(color)
 
 ey = 0
 while ex >= 0:
-    draw_line(500, 0, ex, ey, screen, color)
+    draw_line(100, 100, ex, ey, screen, color)
     ex += -1
     color_change(color)
 
 ex = 0
 while ey <= 500:
-    draw_line(500, 0, ex, ey, screen, color)
+    draw_line(100, 100, ex, ey, screen, color)
     ey += 1
     color_change(color)
 
